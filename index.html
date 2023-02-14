@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>N x N, Tic Tac Toe</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body>
+    <div id="loginScreen">
+        <div class="container" id="container">
+            <h1>N x N <br>Tic Tac Toe Game</h1>
+            <p style="margin-top:40px;">Please enter the value of n :</p>
+            <input class="inputGame" type="text" id="nValue">
+            <p id="nText"></p>
+            <p id="message"></p>
+            <button class="btn" id="valueButton">Enter Value</button>
+            <button class="btn" id="startButton">Start Game</button>
+        </div>      
+    </div>
+    <div id="gameScreen" class="hidden">
+        <div id="gamepad" tabindex="0"></div>
+        <!-- other game screen content here -->
+        <h2 id="gameHeadingText">Oyun Alanına Hoşgeldiniz !!!</h2>
+        <div id="gameBoard"></div>
+        <button id="backToLoginScreenBtn" onmouseover="btnHoverFunc(this)">Back to Login Screen</button>
+    </div>
+      
+
+
+    <script src="script.js"></script>
+</body>
+</html>
