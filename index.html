@@ -4,32 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>N x N, Tic Tac Toe</title>
+    <title>Tic Tac Toe</title>
     <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;200;300;400;500&family=Montserrat:wght@200;300;400;600&family=Raleway:wght@100;300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="loginScreen">
-        <div class="container" id="container">
-            <h1>N x N <br>Tic Tac Toe Game</h1>
-            <p style="margin-top:40px;">Please enter the value of n :</p>
-            <input class="inputGame" type="text" id="nValue">
+    <div class="container">
+
+
+        <div id="loginScreen">
+            <h1>Tic Tac Toe</h1>            
+            <!-- <button id="restartBtn">Restart</button> -->
+            <p class="loginscreentext">Please Enter n Value For Game Area (nxn): </p>
+            <input id="inputValue" placeholder="Enter, a value :)" type="text">
             <p id="nText"></p>
             <p id="message"></p>
-            <button class="btn" id="valueButton">Enter Value</button>
-            <button class="btn" id="startButton">Start Game</button>
-        </div>      
+            <button id="startButton">Start Game</button>
+        </div>
+        <div id="gameScreen">
+            <h1 id="playerText">Game Screen</h1>            
+            <div id="gameBoard">
+                <!-- <div class="box" id="0"></div>
+                <div class="box" id="1"></div>
+                <div class="box" id="2"></div>
+                <div class="box" id="3"></div>
+                <div class="box" id="4"></div>
+                <div class="box" id="5"></div>
+                <div class="box" id="6"></div>
+                <div class="box" id="7"></div>
+                <div class="box" id="8"></div> -->
+            </div>
+            <button id="restartButton">Restart</button>
+            <button id="backToLoginScreen">Login Page</button>
+        </div>
     </div>
-    <div id="gameScreen" class="hidden">
-        <div id="gamepad" tabindex="0"></div>
-        <!-- other game screen content here -->
-        <h2 id="gameHeadingText">Oyun Alanına Hoşgeldiniz !!!</h2>
-        <div id="gameBoard"></div>
-        <button id="backToLoginScreenBtn" onmouseover="btnHoverFunc(this)">Back to Login Screen</button>
-    </div>
-      
 
-
-    <script src="script.js"></script>
+    <script src="/script.js"></script>
 </body>
 </html>
